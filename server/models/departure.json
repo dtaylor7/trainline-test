@@ -1,0 +1,53 @@
+{
+  "name": "departure",
+  "plural": "departures",
+  "base": "Model",
+  "properties": {
+    "serviceIdentifier": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "stationCode": {
+      "type": "string",
+      "required": true
+    },
+    "destination": {
+      "type": "string",
+      "required": true
+    },
+    "operator": {
+      "type": "string",
+      "required": true
+    },
+    "platform": {
+      "type": "string",
+      "required": true
+    },
+    "expected": {
+      "type": "string",
+      "required": true
+    },
+    "due": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "hidden": [
+    "createdAt",
+    "updatedAt",
+    "stationCode"
+  ],
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
+
+
+
+

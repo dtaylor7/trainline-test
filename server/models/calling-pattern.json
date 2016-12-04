@@ -1,0 +1,63 @@
+{
+  "name": "callingPattern",
+  "plural": "callingPatterns",
+  "properties": {
+    "origin": {
+      "type": "string",
+      "required": true
+    },
+    "destination": {
+      "type": "string",
+      "required": true
+    },
+    "serviceIdentifier": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "operator": {
+      "type": "string",
+      "required": true
+    },
+    "stops": {
+      "type": [{
+        "name": {
+          "type": "string",
+          "required": true
+        },
+        "due": {
+          "type": "string",
+          "required": true
+        },
+        "expected": {
+          "type": "string",
+          "required": true
+        }
+      }],
+      "required": true
+    }
+  },
+  "hidden": [
+    "id",
+    "createdAt",
+    "updatedAt",
+    "serviceIdentifier",
+    "date"
+  ],
+  "mixins": {
+    "TimeStamp": true
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
+
+
+
+
+
